@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+    {% block title %}
+        {{ title }}
+    {% endblock %}
+
+    {% block content %}
+    <div>
+        Привет {{ name }}!<br>
+        А я знаю твою почту - {{ email }}
+    </div>
+    <div>
+        <form action="/" method="post">
+            <input type="submit" value="Выйти">
+        </form>
+    </div>
+    {% endblock %}
